@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Gestion des Étudiants</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <h1> Gestion des Étudiants</h1>
+
+    <form id="student-form">
+        <input type="text" id="student-name" placeholder="Nom de l'étudiant" required />
+        <button type="submit">Ajouter</button>
+    </form>
+
+    <div class="student-list" id="students-list">
+        <h2>Liste des étudiants</h2>
+    </div>
+
+    <hr>
+
+    <h1> Gestion des Notes</h1>
+
+    <form id="grade-form">
+        <label for="student-select">Étudiant :</label>
+        <select id="student-select" required></select>
+
+        <label for="course-select">Cours :</label>
+        <select id="course-select" required></select>
+
+        <input type="number" id="grade-value" placeholder="Note (ex: 15.5)" required min="0" max="20" step="0.1">
+        <button type="submit">Ajouter la note</button>
+    </form>
+
+    <div id="grades-list">
+        <h2>Notes de l'étudiant sélectionné</h2>
+    </div>
+
+    <hr>
+
+    <h1> Gestion des Cours</h1>
+
+    <form id="course-form">
+        <input type="text" id="course-name" placeholder="Nom du cours" required />
+        <button type="submit">Ajouter</button>
+    </form>
+
+    <div class="course-list" id="courses-list">
+        <h2>Liste des cours</h2>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
